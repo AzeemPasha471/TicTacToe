@@ -28,10 +28,19 @@ public class TicTacToe {
 			System.out.println(" player: " + option + "\n computer :" + computerSymbol);
 
 		}
+	 private static void displayBoard(char[] board) {
+		 System.out.println("\n"+board[1]+ "|"+board[2]+"|"+board[3]+"|");
+		 System.out.println("_____________");
+		 System.out.println(""+board[4]+ "|"+board[5]+"|"+board[6]+"|");
+		 System.out.println("_____________");
+		 System.out.println(""+board[7]+ "|"+board[8]+"|"+board[9]+"|");
+		
+	 }
 	public static void main(String[] args)
 	{
 		System.out.println("welcome");
 	     char[] board = createBoard();
 	     chooseOption();
+	     displayBoard(board);
 	}
 }
